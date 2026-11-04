@@ -1,0 +1,15 @@
+{
+  "renamePreservedGuid": "11111111111111111111111111111111",
+  "copyGuid": "a71744aef0094b0ba527faafb8e914d7",
+  "originalUnchanged": true,
+  "deleteRemovedAssetAndMeta": true,
+  "renameUndoRestoredPair": true,
+  "movePreservedPairAndGuid": true,
+  "moveUndoRestoredPair": true,
+  "ordinaryProjectViewUnaffected": true,
+  "generatedFolderSearchExcluded": true,
+  "positiveSearchControl": "Player: 1 match in 1 file",
+  "negativeSearchControl": "CachedResult: no matches",
+  "projectFileWarningRefresh": true,
+  "showMetaAndGeneratedOptions": true
+}

@@ -1,0 +1,6 @@
+Unity project detection and asset operations
+Code commit: 0759cedb
+Windows x64 10.0.26200.9445; fixture declares Unity 2022.3.40f1c1. Unity Editor was not run during automated verification.
+Before/after: 1400 x 900 logical viewport. Before uses the upstream project-tree frontend with the Unity view changes reverted; backend Unity detection/exclusions remain enabled.
+Numbered images record native rename, metadata display, copy, delete, move, missing project-file guidance, generated-file display, ordinary project behavior and search exclusion checks.
+asset-results.json records disk assertions; screenshots are step evidence rather than a continuous recording.
