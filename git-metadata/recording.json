@@ -1,0 +1,10 @@
+{
+  "root": "D:/Tools/openidea/target/unity-git-verification/recording-mcp/UnityGitFixture",
+  "staged": [
+    "Assets/Scripts/Delayed.cs",
+    "Assets/Scripts/Delayed.cs.meta",
+    "Assets/Scripts/Player.cs",
+    "Assets/Scripts/Player.cs.meta"
+  ],
+  "status": "AM Assets/Scripts/Delayed.cs\nA  Assets/Scripts/Delayed.cs.meta\nA  Assets/Scripts/Player.cs\nA  Assets/Scripts/Player.cs.meta"
+}

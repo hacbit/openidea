@@ -1,0 +1,20 @@
+{
+  "root": "D:/Tools/openidea/target/unity-git-verification/policies/UnityGitFixture",
+  "ordinary": "D:/Tools/openidea/target/unity-git-verification/ordinary/UnityGitFixture",
+  "error": "Another git process seems to be running in this repository, or the lock file may be stale",
+  "staged": [
+    "Assets/Scripts/Failure.cs",
+    "Assets/Scripts/Silent.cs",
+    "Assets/Scripts/Silent.cs.meta",
+    "Assets/Scripts/Switch.cs"
+  ],
+  "status": "A  Assets/Scripts/Failure.cs\nA  Assets/Scripts/Silent.cs\nA  Assets/Scripts/Silent.cs.meta\nA  Assets/Scripts/Switch.cs\n?? Assets/Scripts/Failure.cs.meta\n?? Assets/Scripts/Never.cs\n?? Assets/Scripts/Never.cs.meta\n?? Assets/Scripts/Switch.cs.meta",
+  "checks": [
+    "silent mode pairs metadata",
+    "never mode does not prompt or stage",
+    "metadata failure reported",
+    "failed metadata not retried",
+    "project switch cancels pending metadata",
+    "ordinary project behavior unchanged"
+  ]
+}

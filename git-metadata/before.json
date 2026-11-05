@@ -1,0 +1,8 @@
+{
+  "root": "D:/Tools/openidea/target/unity-git-verification/before/UnityGitFixture",
+  "confirmation": "Add File to GitDo you want to add the following file to Git?\nAssets/Scripts/Player.csDon't ask againAddCancel",
+  "staged": [
+    "Assets/Scripts/Player.cs"
+  ],
+  "status": "A  Assets/Scripts/Player.cs\n?? Assets/Scripts/Player.cs.meta"
+}

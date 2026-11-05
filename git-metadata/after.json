@@ -1,0 +1,20 @@
+{
+  "root": "D:/Tools/openidea/target/unity-git-verification/after-final/UnityGitFixture",
+  "confirmation": "Add File to GitDo you want to add the following 2 files to Git?\nAssets/Scripts/Player.cs\nAssets/Scripts/Player.cs.metaDon't ask againAddCancel",
+  "staged": [
+    "Assets/Scripts/Delayed.cs",
+    "Assets/Scripts/Delayed.cs.meta",
+    "Assets/Scripts/Player.cs",
+    "Assets/Scripts/Player.cs.meta"
+  ],
+  "status": "AM Assets/Scripts/Delayed.cs\nA  Assets/Scripts/Delayed.cs.meta\nA  Assets/Scripts/Player.cs\nA  Assets/Scripts/Player.cs.meta\n?? Assets/Scripts/Cancelled.cs\n?? Assets/Scripts/Cancelled.cs.meta\n?? Assets/Scripts/Unrelated.cs.meta\n?? Assets/Scripts/Unstaged.cs\n?? Assets/Scripts/Unstaged.cs.meta",
+  "checks": [
+    "existing metadata in confirmation",
+    "copied file and metadata staged",
+    "delayed metadata staged by watcher",
+    "newer source edits remain unstaged",
+    "unrelated metadata untouched",
+    "cancel respected",
+    "unstage cancels pending metadata"
+  ]
+}

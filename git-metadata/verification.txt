@@ -1,0 +1,35 @@
+Unity Git metadata staging: issue #1429
+
+Source: hacbit/openidea, feat/unity-git-metadata
+Commit: 08f3faa4b30aa90ab8836cb0e237e0edd756d9ec
+Base: l0ng-ai/openidea main at 0dfdbbc3237be02b830a023bdd3bf7c08ac3555f
+
+Windows x64 native OpenIDEA 0.1.36; 1400 x 900 logical viewport.
+The temporary Git fixtures declare Unity 2022.3.62f3. Unity Editor was not launched.
+Delayed metadata was written externally to exercise the real filesystem watcher.
+
+before-1-confirmation.png and before-2-git.png use the base revision's
+confirmations.tsx, restored temporarily for verification. The other project/asset
+support is already in main. after-* uses the feature implementation.
+
+flow.mp4 is an 11-second native WebView recording, sampled continuously at
+approximately 5 FPS through the Tauri MCP screenshot API and encoded with ffmpeg.
+It shows an existing sidecar in the confirmation, both copied files staged,
+then delayed metadata appearing while newer source edits remain unstaged (partial).
+
+before.json, after.json, policies.json and recording.json contain actual Git
+index/worktree assertions. The policies cover ask/silently/never, cancellation,
+unstaging, project switching, ordinary projects, and an index.lock failure that
+is reported without retrying the pending metadata operation.
+
+Automated checks:
+- 67 focused tests passed, including 50 new confirmation/pairing tests.
+- Full Vitest: 596 files passed; 6,507 tests passed, 5 skipped.
+- Type checking, lint and frontend build passed. Existing warnings remain.
+- Changed-file formatting and git diff --check passed.
+- Knip code checks passed with --no-config-hints; default Knip reports the existing
+  plugins/**/web-src/** ignore hint in unchanged knip.ts.
+- Whole-repo formatting reports unchanged CLAUDE.md (Windows symlink placeholder).
+- Isolated full E2E: 133 passed, one linkedGradle.spec.ts timeout. The same failure
+  at line 90 reproduced with the base revision's confirmation workflow.
+- macOS and Linux desktop behavior was not checked locally.
