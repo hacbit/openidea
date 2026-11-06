@@ -1,0 +1,105 @@
+{
+  "type": {
+    "banners": [
+      "Decompiled assembly (read-only).UnityEngine.CoreModule"
+    ],
+    "containsSymbol": true,
+    "cursor": {
+      "col": 13,
+      "doc": 5,
+      "line": 17,
+      "offset": 493,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs"
+    },
+    "decompiled": true,
+    "description": "UnityEngine.CoreModule",
+    "languageId": "csharp",
+    "line": "public class MonoBehaviour : Behaviour",
+    "readOnly": true,
+    "target": {
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs",
+      "range": {
+        "end": {
+          "col": 26,
+          "line": 17
+        },
+        "start": {
+          "col": 13,
+          "line": 17
+        }
+      },
+      "uri": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs"
+    },
+    "title": "UnityEngine.MonoBehaviour.cs",
+    "uiMode": null
+  },
+  "member": {
+    "banners": [
+      "Decompiled assembly (read-only).UnityEngine.CoreModule"
+    ],
+    "containsSymbol": true,
+    "cursor": {
+      "col": 13,
+      "doc": 5,
+      "line": 91,
+      "offset": 2243,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs"
+    },
+    "decompiled": true,
+    "description": "UnityEngine.CoreModule",
+    "languageId": "csharp",
+    "line": "\tpublic void CancelInvoke()",
+    "readOnly": true,
+    "target": {
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs",
+      "range": {
+        "end": {
+          "col": 25,
+          "line": 91
+        },
+        "start": {
+          "col": 13,
+          "line": 91
+        }
+      },
+      "uri": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs"
+    },
+    "title": "UnityEngine.MonoBehaviour.cs",
+    "uiMode": null
+  },
+  "safeguards": {
+    "back": {
+      "col": 5,
+      "doc": 4,
+      "line": 5,
+      "offset": 99,
+      "path": "D:/Tools/openidea/target/csharp-metadata-verification/Unity Game/Assets/Scripts/TestMono.cs"
+    },
+    "banner": true,
+    "count": 1,
+    "diagnostics": 0,
+    "dirty": false,
+    "editError": {
+      "data": null,
+      "kind": "permissionDenied",
+      "message": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs is read-only"
+    },
+    "emptyTab": false,
+    "errorShown": true,
+    "failedActive": {
+      "col": 13,
+      "doc": 5,
+      "line": 91,
+      "offset": 2243,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs"
+    },
+    "forward": {
+      "col": 13,
+      "doc": 5,
+      "line": 91,
+      "offset": 2243,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Unity%20Game/Assembly-CSharp.csproj/decompiled/UnityEngine.MonoBehaviour.cs"
+    },
+    "unchanged": true
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "type": {
+    "banners": [
+      "Decompiled assembly (read-only).System.Runtime"
+    ],
+    "containsSymbol": true,
+    "cursor": {
+      "col": 0,
+      "doc": 3,
+      "line": 0,
+      "offset": 0,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs"
+    },
+    "decompiled": true,
+    "description": "System.Runtime",
+    "languageId": "csharp",
+    "line": "using System.Collections.Generic;",
+    "readOnly": true,
+    "target": {
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs",
+      "range": {
+        "end": {
+          "col": 1,
+          "line": 0
+        },
+        "start": {
+          "col": 0,
+          "line": 0
+        }
+      },
+      "uri": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs"
+    },
+    "title": "System.Text.StringBuilder.cs",
+    "uiMode": null
+  },
+  "member": {
+    "banners": [
+      "Decompiled assembly (read-only).System.Runtime"
+    ],
+    "containsSymbol": true,
+    "cursor": {
+      "col": 22,
+      "doc": 3,
+      "line": 265,
+      "offset": 12959,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs"
+    },
+    "decompiled": true,
+    "description": "System.Runtime",
+    "languageId": "csharp",
+    "line": "\tpublic StringBuilder Append(bool value)",
+    "readOnly": true,
+    "target": {
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs",
+      "range": {
+        "end": {
+          "col": 28,
+          "line": 265
+        },
+        "start": {
+          "col": 22,
+          "line": 265
+        }
+      },
+      "uri": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs"
+    },
+    "title": "System.Text.StringBuilder.cs",
+    "uiMode": null
+  },
+  "safeguards": {
+    "back": {
+      "col": 19,
+      "doc": 2,
+      "line": 4,
+      "offset": 62,
+      "path": "D:/Tools/openidea/target/csharp-metadata-verification/Plain CSharp/Example.cs"
+    },
+    "banner": true,
+    "count": 1,
+    "diagnostics": 0,
+    "dirty": false,
+    "editError": {
+      "data": null,
+      "kind": "permissionDenied",
+      "message": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs is read-only"
+    },
+    "emptyTab": false,
+    "errorShown": true,
+    "failedActive": {
+      "col": 22,
+      "doc": 3,
+      "line": 265,
+      "offset": 12959,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs"
+    },
+    "forward": {
+      "col": 22,
+      "doc": 3,
+      "line": 265,
+      "offset": 12959,
+      "path": "csharp:/D:/Tools/openidea/target/csharp-metadata-verification/Plain%20CSharp/Example.csproj/decompiled/System.Text.StringBuilder.cs"
+    },
+    "unchanged": true
+  }
+}

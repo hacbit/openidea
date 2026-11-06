@@ -1,0 +1,20 @@
+{
+  "active": {
+    "col": 1,
+    "doc": 3,
+    "line": 9,
+    "offset": 179,
+    "path": "D:/Tools/openidea/target/csharp-metadata-verification/Plain CSharp/Example.cs"
+  },
+  "banners": [],
+  "hover": {
+    "contents": {
+      "kind": "markdown",
+      "value": "```csharp\nStringBuilder.StringBuilder()\n```\n\nInitializes a new instance of the ``System.Text.StringBuilder`` class."
+    },
+    "range": null
+  },
+  "locations": [],
+  "path": "D:/Tools/openidea/target/csharp-metadata-verification/Plain CSharp/Example.cs",
+  "readOnly": false
+}

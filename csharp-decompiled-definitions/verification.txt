@@ -1,0 +1,60 @@
+C# decompiled assembly definitions — issue #1440
+
+Environment: Windows desktop, native Tauri application, csharp-ls 0.28.0,
+Unity 2022.3.62f3 and a .NET 8 C# fixture. Both fixture paths contain spaces.
+Screenshots and recording were captured with this change on main 7d267ab5,
+before rebasing the unchanged feature onto main 915fec59 (commit bfb6ff18).
+
+Before: StringBuilder hover resolves but Go to Definition returns no locations.
+See before.json and before-1-plain.png.
+
+After, native application:
+- StringBuilder / Append open read-only C# documents from System.Runtime.
+- MonoBehaviour / CancelInvoke open a read-only UnityEngine.CoreModule document
+  at the positions returned by csharp-ls, with the assembly name in the banner.
+- The actual navigate.declaration action opens MonoBehaviour, follows Behaviour,
+  returns to project source and opens CancelInvoke; navigation-flow.mp4 records it.
+- Repeated navigation reuses the document; back/forward retains the source position.
+- Editing is rejected, saving does not modify project files or assemblies.
+- Missing metadata reports an error and leaves the current editor usable.
+- Decompiled views have no project pull diagnostics (Unity's language version would
+  otherwise report errors in csharp-ls's decompiled modern C#).
+See after-plain.json, after-unity.json and recording.json for actual assertions.
+
+Protocol/editor regression coverage:
+- Opt-in is scoped to csharp-ls. Other servers retain their existing responses.
+- Raw spaces and Unicode in csharp: URIs are encoded before typed deserialization;
+  existing escaping and opaque data/command arguments are preserved.
+- Source-generated documents keep their source label and pull diagnostics.
+- Metadata errors can be retried and virtual-document caching is reused.
+
+Checks before the main update:
+- cargo test -p ide-lsp: 173 passed, 9 ignored.
+- cargo clippy -p ide-lsp --all-targets -- -D warnings; cargo fmt --all --check: passed.
+- Focused virtual-document/banner/catalog tests: 35 passed, 6 skipped.
+- Typecheck, lint, build, changed-file formatting, knip --no-config-hints: passed.
+- Editor and navigation Playwright tests: 10 passed.
+- Full frontend tests: 6579 passed, 6 skipped, 1 failed (existing zh:Logcat check,
+  since fixed upstream and included in the new base).
+
+Limitations: macOS/Linux desktop and a real source generator were not run locally.
+Positions come from csharp-ls: the tested StringBuilder constructor returns 0:0;
+Append selects the first overload. Unity type/member locations were correct.
+
+Final checks after rebasing onto main 915fec59, feature commit bfb6ff18:
+- cargo fmt --all --check: passed.
+- cargo clippy --workspace --all-targets -j 2 --config net.offline=false -- -D warnings: passed.
+- cargo test --workspace --no-fail-fast -j 2 --config net.offline=false: completed.
+  Four local-environment failures passed in isolated reruns (see test-results.txt):
+  * ide-agent required sh; ide-host RPC required echo. Added installed Git usr/bin
+    to PATH for the rerun process only.
+  * ide-sdk python3 resolved to the Windows Store alias. Used a temporary python3.cmd
+    forwarding unchanged arguments to the installed C:\Python314\python.exe.
+  * ide-vfs loaded the user's global *.tmp ignore. Used GIT_CONFIG_GLOBAL pointing
+    explicitly to an empty ignore file for this test process only.
+  No source or user-level environment/configuration changes were needed.
+- pnpm typecheck, pnpm lint, pnpm knip, pnpm build: passed.
+- pnpm test: 6609 passed, 6 skipped (607 files passed).
+- pnpm exec playwright test e2e/editor.spec.ts e2e/diff-navigation.spec.ts: 10 passed.
+- Changed frontend files pass oxfmt. pnpm format:check only reports unchanged
+  CLAUDE.md, which is checked out as a symlink placeholder on this Windows machine.
